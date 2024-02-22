@@ -5,17 +5,13 @@ const PNumberLabel = document.getElementById("pnumber");
 const EmailLabel = document.getElementById("EA");
 const DateLabel = document.getElementById("Date");
 const TimeLabel = document.getElementById("Time");
-const Thanks = document.getElementById("thankyou");
 let Name = document.getElementById("nameInput");
 let Address = document.getElementById("address");
 let Phone = document.getElementById("phone");
 let Email = document.getElementById("email");
 let Date = document.getElementById("date");
 let Time = document.getElementById("time");
-Thanks.style.display = "none";
 Submit.addEventListener("click", function Sumbit(){
-    Thanks.innerHTML = "Thank you " + Name.value + " for sumbiting a request for " + Date.value + " at " + Time.value + " we will text " + Phone.value + " to confirm your request";
-    Thanks.style.display = "block";
     Submit.style.display = "none";
     NameLabel.style.display = "none";
     AddressLabel.style.display = "none";
