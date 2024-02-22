@@ -1,18 +1,22 @@
-const Submit = document.getElementById("submit");
+const SubmitBtn = document.getElementById("submit");
 const NameLabel = document.getElementById("namelabel");
 const AddressLabel = document.getElementById("addresslabel");
 const PNumberLabel = document.getElementById("pnumber");
 const EmailLabel = document.getElementById("EA");
 const DateLabel = document.getElementById("Date");
 const TimeLabel = document.getElementById("Time");
+const Thanks = document.getElementById("thanks");
 let Name = document.getElementById("nameInput");
 let Address = document.getElementById("address");
 let Phone = document.getElementById("phone");
 let Email = document.getElementById("email");
 let Date = document.getElementById("date");
 let Time = document.getElementById("time");
-Submit.addEventListener("click", function Sumbit(){
-    Submit.style.display = "none";
+Thanks.style.display = "none";
+SubmitBtn.addEventListener("click", function submit() {
+    Thanks.innerHTML = "Thank you " + Name.value + " for your request! We will contact you at " + Email.value + " or " + Phone.value + " to get details for your order. We hope to see you on " + Date.value + " at " + Time.value + "!";
+    Thanks.style.display = "block";
+    SubmitBtn.style.display = "none";
     NameLabel.style.display = "none";
     AddressLabel.style.display = "none";
     PNumberLabel.style.display = "none";
@@ -25,6 +29,6 @@ Submit.addEventListener("click", function Sumbit(){
     Email.style.display = "none";
     Date.style.display = "none";
     Time.style.display = "none";
-    console.clear(0);
-    Console.log(Name.value + "\n" + Address.value + "\n" + Phone.value + "\n" + Email.value + "\n" + Date.value + "\n" + Time.value);
+    console.clear();
+    console.log(Name.value + "\n" + Address.value + "\n" + Phone.value + "\n" + Email.value + "\n" + Date.value + "\n" + Time.value);
 });
