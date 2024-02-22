@@ -12,6 +12,7 @@ let Email = document.getElementById("email");
 let Date = document.getElementById("date");
 let Time = document.getElementById("time");
 let Thanks = document.getElementById("thankyou");
+Thanks.style.display = "none";
 Submit.addEventListener("click", function Sumbit(){
     Thanks.innerHTML = "Thank you " + Name.value + " for sumbiting a request for " + Date.value + " at " + Time.value + " we will text " + Phone.value + " to confirm your request";
     Thanks.style.display = "block";
