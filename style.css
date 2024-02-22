@@ -5,7 +5,7 @@ html {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: red;
+    background-color: darkred;
     overflow: hidden;
 }
 
