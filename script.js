@@ -23,14 +23,12 @@ SubmitBtn.addEventListener("click", function submit() {
     AddressLabel.style.display = "none";
     PNumberLabel.style.display = "none";
     EmailLabel.style.display = "none";
-    OrderLabel.style.display = "none";
     DateLabel.style.display = "none";
     TimeLabel.style.display = "none";
     Name.style.display = "none";
     Address.style.display = "none";
     Phone.style.display = "none";
     Email.style.display = "none";
-    Order.style.display = "none";
     Date.style.display = "none";
     Time.style.display = "none";
     console.clear();
