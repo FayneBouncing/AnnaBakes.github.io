@@ -1,4 +1,6 @@
 const SubmitBtn = document.getElementById("submit");
+const AddBtn = document.getElementById("add");
+const MinusBtn = document.getElementById("minus")
 const NameLabel = document.getElementById("namelabel");
 const AddressLabel = document.getElementById("addresslabel");
 const OrderLabel = document.getElementById("orderlabel");
@@ -15,6 +17,7 @@ let Order = document.getElementById("order");
 let Date = document.getElementById("date");
 let Time = document.getElementById("time");
 Thanks.style.display = "none";
+MinusBtn.style.display = "none";
 SubmitBtn.addEventListener("click", function submit() {
     Thanks.innerHTML = "Thank you " + Name.value + " for your request! We will contact you at " + Email.value + " or " + Phone.value + " to get details for your order of " + Order.value + ". We hope to see you on " + Date.value + " at " + Time.value + "!";
     Thanks.style.display = "block";
