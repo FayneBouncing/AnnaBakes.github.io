@@ -29,3 +29,6 @@ label {
     font-family: Bradley Hand, cursive;
     color: black;
 }
+.buttons {
+    display: flex;
+}
