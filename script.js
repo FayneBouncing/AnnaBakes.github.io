@@ -33,6 +33,8 @@ SubmitBtn.addEventListener("click", function submit() {
     Email.style.display = "none";
     Date.style.display = "none";
     Time.style.display = "none";
+    AddBtn.style.display = "none";
+    MinusBtn.style.display = "none";
     console.clear();
     console.log(Name.value + "\n" + Address.value + "\n" + Phone.value + "\n" + Email.value + "\n" + Date.value + "\n" + Time.value);
 });
