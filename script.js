@@ -36,3 +36,6 @@ SubmitBtn.addEventListener("click", function submit() {
     console.clear();
     console.log(Name.value + "\n" + Address.value + "\n" + Phone.value + "\n" + Email.value + "\n" + Date.value + "\n" + Time.value);
 });
+AddBtn.addEventListener("click", function add() {
+    MinusBtn.style.display = "block";
+});
