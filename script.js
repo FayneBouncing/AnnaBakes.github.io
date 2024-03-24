@@ -26,7 +26,7 @@ SubmitBtn.addEventListener("click", function submit() {
     PNumberLabel.style.display = "none";
     EmailLabel.style.display = "none";
     DateLabel.style.display = "none";
-    TimeLabel.style.display = "none";
+    TimeLabel.style.display = "none"; 
     Name.style.display = "none";
     Address.style.display = "none";
     Phone.style.display = "none";
@@ -40,7 +40,6 @@ SubmitBtn.addEventListener("click", function submit() {
 });
 AddBtn.addEventListener("click", function add() {
     MinusBtn.style.display = "block";
-    var input = document.createElement("input");
-    input.setAttribute("type", "text");
-    document.getElementById("textboxContainer").appendChild(input);
+    let desc = document.createElement("input");
+    document.body.appendChild(desc);
 });
