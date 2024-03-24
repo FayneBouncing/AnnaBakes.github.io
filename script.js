@@ -40,4 +40,7 @@ SubmitBtn.addEventListener("click", function submit() {
 });
 AddBtn.addEventListener("click", function add() {
     MinusBtn.style.display = "block";
+    var input = document.createElement("input");
+    input.setAttribute("type", "text");
+    document.getElementById("textboxContainer").appendChild(input);
 });
