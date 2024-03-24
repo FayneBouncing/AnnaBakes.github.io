@@ -41,5 +41,6 @@ SubmitBtn.addEventListener("click", function submit() {
 AddBtn.addEventListener("click", function add() {
     MinusBtn.style.display = "block";
     let desc = document.createElement("input");
-    document.body.appendChild(desc);
+    desc.setAttribute("type", "text");
+    desc.insertBefore(desc,SubmitBtn);
 });
