@@ -8,7 +8,7 @@ const EmailLabel = document.getElementById("EA");
 const DateLabel = document.getElementById("Date");
 const TimeLabel = document.getElementById("Time");
 const Thanks = document.getElementById("thanks");
-const div = document.getElementsByClassName("description");
+const div = document.getElementsByClassName("Desc");
 let Name = document.getElementById("nameInput");
 let Address = document.getElementById("address");
 let Phone = document.getElementById("phone");
@@ -22,12 +22,12 @@ AddBtn.addEventListener("click", function add() {
     MinusBtn.style.display = "block";
     let desc = document.createElement("input");
     desc.setAttribute("type", "text");
-    document.body.appendChild(desc);
+    document.getElementById("Desc").appendChild(desc);
     order.push(desc);
     console.log(order);
     console.log(order.length);
     MinusBtn.addEventListener("click", function Delete() {
-        document.body.removeChild(desc);
+        document.getElementById("Desc").removeChild(desc);
         order.shift(order.length-1);
         console.log(order.length);
         if(order.length == 0){
@@ -37,6 +37,7 @@ AddBtn.addEventListener("click", function add() {
 });
 
 SubmitBtn.addEventListener("click", function submit() {
+    if(confirm("Confim Order?")){
     Thanks.innerHTML = "Thank you " + Name.value + " for your request!";
     Thanks.style.display = "block";
     SubmitBtn.style.display = "none";
@@ -56,4 +57,7 @@ SubmitBtn.addEventListener("click", function submit() {
     MinusBtn.style.display = "none";
     console.clear();
     console.log(Name.value + "\n" + Address.value + "\n" + Phone.value + "\n" + Email.value + "\n" + Date.value + "\n" + Time.value);
+    } else {
+        alert("Order Not Confirmed");
+    }
 });

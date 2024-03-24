@@ -8,6 +8,7 @@ html {
     background-color: darkred;
     overflow: hidden;
 }
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -29,6 +30,36 @@ label {
     font-family: Bradley Hand, cursive;
     color: black;
 }
+
+.Name {
+    display: flex;
+}
+
+.Address {
+    display: flex;
+}
+
+.Phone {
+    display: flex;
+}
+
+.Email {
+    display: flex;
+}
+
+.Date {
+    display: flex;
+}
+
+.Time {
+    display: flex;
+}
+
 .buttons {
     display: flex;
+}
+
+.Desc {
+    display: flex;
+    flex-direction: column;
 }
